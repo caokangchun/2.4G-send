@@ -1,0 +1,71 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.22.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 0 Microsoft, Microsoft, LIC=VGXHL-06RWQ-RAXDM-X23RQ-FI8FJ-L856Z
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.22
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.22
+Dialog DLL:      DCM.DLL V1.13.9.0
+Target DLL:      Segger\JL2CM3.dll V2.99.23.0
+Dialog DLL:      TCM.DLL V1.21.0.0
+ 
+<h2>Project:</h2>
+E:\file\ckc\GD project\project_svn\project\SW\Project\BSP\X-9700H 2.4G+BT V1.0 - 副本\MDK-ARM\Project.uvprojx
+Project File Date:  09/07/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'X-9700H_2.4G_BT_V1_0'
+compiling main.c...
+..\Application\main.c(131): warning:  #188-D: enumerated type mixed with another type
+  	static bool LedStatus = 0;
+..\Application\main.c(141): warning:  #188-D: enumerated type mixed with another type
+  	LedStatus = !LedStatus;
+..\Application\main.c(344): warning:  #177-D: variable "ptr"  was declared but never referenced
+  	uint8_t *ptr = (uint8_t*)xxx;
+..\Application\main.c(345): warning:  #177-D: variable "len"  was declared but never referenced
+  	uint16_t len;
+..\Application\main.c(346): warning:  #177-D: variable "gbk"  was declared but never referenced
+  	uint16_t gbk;
+..\Application\main.c(347): warning:  #177-D: variable "len1"  was declared but never referenced
+  	uint8_t len1;
+..\Application\main.c(349): warning:  #177-D: variable "keySig"  was declared but never referenced
+  	Key_Signal keySig;
+..\Application\main.c(350): warning:  #177-D: variable "chr"  was declared but never referenced
+  	uint8_t chr;
+..\Application\main.c(40): warning:  #177-D: function "LEDFlash"  was declared but never referenced
+  static void LEDFlash(void)
+..\Application\main.c(273): warning:  #177-D: function "getGbk"  was declared but never referenced
+  static UINT16 getGbk(uint8_t **buff, UINT16 *len)
+..\Application\main.c(302): warning:  #177-D: variable "KeyboardVal"  was declared but never referenced
+  static uint8_t KeyboardVal[22]={0}; 
+..\Application\main.c(303): warning:  #177-D: function "gbk2Keyval"  was declared but never referenced
+  static BOOL gbk2Keyval(UINT16 gbk, uint8_t *keyval, uint8_t *len)
+..\Application\main.c: 12 warnings, 0 errors
+linking...
+.\output\X-9700H_2.4G_BT_V1_0: Warning: L6320W: Ignoring --keep command. Cannot find argument 'Music.o'.
+Program Size: Code=36744 RO-data=2040 RW-data=1280 ZI-data=10608  
+Finished: 0 information, 1 warning and 0 error messages.
+FromELF: creating hex file...
+".\output\X-9700H_2.4G_BT_V1_0" - 0 Error(s), 13 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  E:\file\ckc\GD project\project_svn\project\SW\Project\BSP\X-9700H 2.4G+BT V1.0 - 副本\MDK-ARM\RTE\_X-9700H_2.4G_BT_V1_0
+  C:\Keil_v5\ARM\PACK\MindMotion\MM32F103_DFP\1.4.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
