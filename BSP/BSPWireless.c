@@ -130,18 +130,18 @@ bool BSPWirelseeRequestMatch(void)
 
 
 
-
+bool SendCmd2_4G(CMD_UPLOAD* p);
 //char TestString[] = "caoKangChun@@";
 char TestString[] = "guangzhousanmakejiyouxiangongsi\r";
 
 //无线通讯循环程序
 void BSPWirelessRoutine(void)
 {
-//	pktCmdUpload.sid = getPkt_sid();		//获取sid
+	pktCmdUpload.sid = getPkt_sid();		//获取sid
 
-//	pktCmdUpload.crc = crc_high_first((uint8_t*)&pktCmdUpload,sizeof(CMD_UPLOAD));	//计算crc
+	pktCmdUpload.crc = crc_high_first((uint8_t*)&pktCmdUpload,sizeof(CMD_UPLOAD)-1);	//计算crc
 	
-//	SendCmd2_4G(pktCmdUpload.sid,pktCmdUpload.crc);
+	SendCmd2_4G(&pktCmdUpload);
 //	UART2Routine();
 //	
 //	if(CONNECT == GetBTStatus())

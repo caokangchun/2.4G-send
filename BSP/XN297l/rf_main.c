@@ -415,17 +415,17 @@ static bool SendData2_4G(uint8_t mode)
 }
 
 
-bool SendCmd2_4G(uint8_t sid,uint8_t crc)
+bool SendCmd2_4G(CMD_UPLOAD* p)
 {
 	BOOL status = FALSE;
 	uint8_t ack_tmp[4];
 	uint8_t ack_len;
 
 #ifdef RF_250KBPS
-	uint8_t i;
+//	uint8_t i;
 
-	uint8_t tx_buf[RF_FIFO_MAX];
-	uint8_t *tx_index = NULL;
+//	uint8_t tx_buf[RF_FIFO_MAX];
+//	uint8_t *tx_index = NULL;
 #endif /* RF_250KBPS */
 
 
@@ -441,14 +441,15 @@ bool SendCmd2_4G(uint8_t sid,uint8_t crc)
 		{
 		RF_SNED_DATA2:
 		
-			tx_buf[0] = 1; // first to be bag id
-			tx_buf[7] = 0xfe;
-			tx_buf[8] = 0xef;
-			tx_buf[9] = sid;
-			tx_buf[10] = crc;
+//			tx_buf[0] = 1; // first to be bag id
+//			tx_buf[7] = p->prefix1;
+//			tx_buf[8] = p->prefix2;
+//			tx_buf[9] = p->sid;
+//			tx_buf[10] = p->crc;
+			
 
 			
-			status = rf_transceiver(RF_TRANSFER, RF_TX_TOUT, tx_buf, 11, \
+			status = rf_transceiver(RF_TRANSFER, RF_TX_TOUT, (uint8_t*)p, sizeof(CMD_UPLOAD), \
 									ack_tmp, sizeof(ack_tmp), &ack_len);
 									
 			if(status) // tx ok and get ack data
@@ -472,7 +473,6 @@ bool SendCmd2_4G(uint8_t sid,uint8_t crc)
 	if(status) // rx ack ok, tx success
 	{
 		rf_host.idleout = 0; // clear idle cnt
-		usb_tx_delay(&uart.buff[HEAD_LEN], uart.index-HEAD_LEN);
 	}
 
 	return status;
