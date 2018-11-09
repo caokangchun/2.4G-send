@@ -179,7 +179,11 @@
           <Type>0</Type>
           <LineNumber>265</LineNumber>
           <EnabledFlag>1</EnabledFlag>
+<<<<<<< HEAD
           <Address>134252572</Address>
+=======
+          <Address>134252628</Address>
+>>>>>>> BranchAckAddCRC
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -190,6 +194,25 @@
           <ExecCommand></ExecCommand>
           <Expression>\\X_9700H_2\../Application/main.c\265</Expression>
         </Bp>
+<<<<<<< HEAD
+=======
+        <Bp>
+          <Number>1</Number>
+          <Type>0</Type>
+          <LineNumber>389</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134241534</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>E:\file\ckc\GD project\project_svn\project\SW\Project\BSP\X-9700H 2.4G+BT V1.0 - 鍓湰\BSP\XN297l\rf_main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\X_9700H_2\../BSP/XN297l/rf_main.c\389</Expression>
+        </Bp>
+>>>>>>> BranchAckAddCRC
       </Breakpoint>
       <WatchWindow1>
         <Ww>

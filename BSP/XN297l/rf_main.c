@@ -385,24 +385,34 @@ static bool SendData2_4G(uint8_t mode)
 
 		if(status)
 		{
-			if((0xaa == receive_status[0]) && (0x55 == receive_status[3]))
+			//crc
+			if(checkData(receive_status, receive_status_len))
 			{
-				if(receive_status[1] == uart.buff[PID_NO])	//判断返回的数据是否为本次响应
+				if((0xaa == receive_status[0]) && (0x55 == receive_status[1]))
 				{
-					//分析spid
-					rf_host.idleout = 0; // clear idle cnt
-					pkt_sid = receive_status[1];   //成功，记录sid					
+					if(receive_status[2] == uart.buff[PID_NO])	//判断返回的数据是否为本次响应
+					{
+						//分析spid
+						rf_host.idleout = 0; // clear idle cnt
+						pkt_sid = receive_status[2];   //成功，记录sid					
+					}
+					else	
+					{
+						status = FALSE;
+					}
+					
 				}
-				else	
+				else
 				{
 					status = FALSE;
-				}
-				
+				}				
 			}
 			else
 			{
 				status = FALSE;
 			}
+
+			
 		}
 		else
 		{
