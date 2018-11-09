@@ -177,25 +177,25 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>394</LineNumber>
+          <LineNumber>265</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134241532</Address>
+          <Address>134252628</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>E:\file\ckc\GD project\project_svn\project\SW\Project\BSP\X-9700H 2.4G+BT V1.0 - 鍓湰\BSP\XN297l\rf_main.c</Filename>
+          <Filename>E:\file\ckc\GD project\project_svn\project\SW\Project\BSP\X-9700H 2.4G+BT V1.0 - 鍓湰\Application\main.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\X_9700H_2\../BSP/XN297l/rf_main.c\394</Expression>
+          <Expression>\\X_9700H_2\../Application/main.c\265</Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
           <LineNumber>389</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134241528</Address>
+          <Address>134241534</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -205,22 +205,6 @@
           <Filename>E:\file\ckc\GD project\project_svn\project\SW\Project\BSP\X-9700H 2.4G+BT V1.0 - 鍓湰\BSP\XN297l\rf_main.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression>\\X_9700H_2\../BSP/XN297l/rf_main.c\389</Expression>
-        </Bp>
-        <Bp>
-          <Number>2</Number>
-          <Type>0</Type>
-          <LineNumber>377</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134241492</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>E:\file\ckc\GD project\project_svn\project\SW\Project\BSP\X-9700H 2.4G+BT V1.0 - 鍓湰\BSP\XN297l\rf_main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\X_9700H_2\../BSP/XN297l/rf_main.c\377</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -351,7 +335,7 @@
         <Mm>
           <WinNumber>1</WinNumber>
           <SubType>1</SubType>
-          <ItemText>0x800fc00</ItemText>
+          <ItemText>0x0801d804</ItemText>
           <AccSizeX>0</AccSizeX>
         </Mm>
       </MemoryWindow1>
@@ -1533,7 +1517,7 @@
 
   <Group>
     <GroupName>BSP/XN297l</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -1653,7 +1637,7 @@
 
   <Group>
     <GroupName>BSP</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>

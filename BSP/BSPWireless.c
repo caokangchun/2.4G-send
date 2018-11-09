@@ -36,6 +36,21 @@ unsigned char crc_high_first(unsigned char *ptr, unsigned char len)
 }
 
 
+BOOL checkData(unsigned char *ptr, UINT16 len)
+{
+	uint8_t crc;
+	
+	crc = crc_high_first(ptr,len-1);
+	if(crc == ptr[len-1])
+	{
+		return TRUE;
+	}
+
+	return FALSE;
+}
+
+
+
 /***************描述：返回当前连接类型****************/
 Wireless_Type BSPGetWireleeType(void)
 {
